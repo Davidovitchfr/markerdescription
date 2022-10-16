@@ -1,0 +1,10 @@
+
+class CfgFunctions
+{
+#include "Functions.hpp"
+};
+
+
+
+
+#include "config\Config_Master.hpp"
