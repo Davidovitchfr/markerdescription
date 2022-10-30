@@ -1,0 +1,6 @@
+#include "dialog\DEFINE_A3.hpp"
+
+class RscTitltes 
+{
+    #include "dialog\DisplayVolumeSpeaker.hpp"
+};
