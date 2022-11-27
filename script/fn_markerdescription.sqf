@@ -14,7 +14,7 @@ addMissionEventHandler
   {  
    _NomDuMarker = (markerText (_marker select 1)); 
    _Description = (getText(missionConfigFile >> 'config_mapmarker' >> (_marker select 1) >> 'description')); 
-   _Etat = (getText(missionConfigFile >> 'config_mapmarker' >> (_marker select 1) >> 'etat')); 
+   _info = (getText(missionConfigFile >> 'config_mapmarker' >> (_marker select 1) >> 'etat')); 
    
     if (_NomDuMarker isEqualTo "") then  
    { 
@@ -26,9 +26,9 @@ addMissionEventHandler
     _Description = "Aucune description trouvée !"; 
    }; 
     
-   if (_Etat isEqualTo "") then  
+   if (_info isEqualTo "") then  
    { 
-    _Etat = "Aucun état trouvé !"; 
+    _info = "Aucune information trouvée !"; 
    }; 
    
    //ImpressionDuMessageQuandLeMarkerEstDansLaConfig 
